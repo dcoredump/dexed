@@ -5,7 +5,7 @@ TARGET=dexed.so
 #FILETRACE=1
 
 INSTALL_DIR=/zynthian/zynthian-plugins/lv2
-INSTALL_MYPLUGINS_DIR=/zynthian/zynthian-my-plugins/lv2
+INSTALL_MYPLUGINS_DIR=/zynthian/zynthian-my-data/presets/lv2
 
 OBJ=fm_core.o env.o lfo.o dx7note.o sin.o pitchenv.o fm_op_kernel.o freqlut.o exp2.o EngineMkI.o EngineOpl.o PluginFx.o trace.o
 
