@@ -13,42 +13,42 @@
     rdfs:seeAlso <modgui.ttl> .
 
 <https://github.com/dcoredump/dexed.lv2#ROM1A>
-	a pset:bank ;
+	a pset:Bank ;
 	lv2:appliesTo <https://github.com/dcoredump/dexed.lv2> ;
 	rdfs:label "ROM1A" .
 
 <https://github.com/dcoredump/dexed.lv2#ROM1B>
-	a pset:bank ;
+	a pset:Bank ;
 	lv2:appliesTo <https://github.com/dcoredump/dexed.lv2> ;
 	rdfs:label "ROM1B" .
 
 <https://github.com/dcoredump/dexed.lv2#ROM2A>
-	a pset:bank ;
+	a pset:Bank ;
 	lv2:appliesTo <https://github.com/dcoredump/dexed.lv2> ;
 	rdfs:label "ROM2A" .
 
 <https://github.com/dcoredump/dexed.lv2#ROM2B>
-	a pset:bank ;
+	a pset:Bank ;
 	lv2:appliesTo <https://github.com/dcoredump/dexed.lv2> ;
 	rdfs:label "ROM2B" .
 
 <https://github.com/dcoredump/dexed.lv2#ROM3A>
-	a pset:bank ;
+	a pset:Bank ;
 	lv2:appliesTo <https://github.com/dcoredump/dexed.lv2> ;
 	rdfs:label "ROM3A" .
 
 <https://github.com/dcoredump/dexed.lv2#ROM3B>
-	a pset:bank ;
+	a pset:Bank ;
 	lv2:appliesTo <https://github.com/dcoredump/dexed.lv2> ;
 	rdfs:label "ROM3B" .
 
 <https://github.com/dcoredump/dexed.lv2#ROM4A>
-	a pset:bank ;
+	a pset:Bank ;
 	lv2:appliesTo <https://github.com/dcoredump/dexed.lv2> ;
 	rdfs:label "ROM4A" .
 
 <https://github.com/dcoredump/dexed.lv2#ROM4B>
-	a pset:bank ;
+	a pset:Bank ;
 	lv2:appliesTo <https://github.com/dcoredump/dexed.lv2> ;
 	rdfs:label "ROM4B" .
 

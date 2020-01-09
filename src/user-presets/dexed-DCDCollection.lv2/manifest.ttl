@@ -8,7 +8,7 @@
 
 <dexed-DCDCollection>
 	lv2:appliesTo <https://github.com/dcoredump/dexed.lv2> ;
-	a pset:bank ;
+	a pset:Bank ;
 	rdfs:label "DCDCollection" .
 
 <dexed-01_FM-Rhodes.ttl>
