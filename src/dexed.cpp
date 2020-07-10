@@ -552,6 +552,23 @@ bool Dexed::ProcessMidiMessage(const uint8_t *buf, uint32_t buf_size) {
 
     uint8_t cmd = buf[0];
 
+    if(cmd==0xf0)
+    {
+        TRACE("MIDI SYSEX (length %d bytes):",buf_size);
+#ifdef DEBUG
+        uint8_t tmp_buf[8];
+	for(uint16_t i=0; i<buf_size;i++)
+	{
+           if(i%8==0)
+               memset(tmp_buf,0,8);
+           tmp_buf[i%8]=buf[i];
+           if(i==buf_size-1 || i%8==7)
+	       TRACE("%3d: [0x%0x|%03d][0x%0x|%03d][0x%0x|%03d][0x%0x|%03d][0x%0x|%03d][0x%0x|%03d][0x%0x|%03d][0x%0x|%03d]",i,tmp_buf[0],tmp_buf[0],tmp_buf[1],tmp_buf[1],tmp_buf[2],tmp_buf[2],tmp_buf[3],tmp_buf[3],tmp_buf[4],tmp_buf[4],tmp_buf[5],tmp_buf[5],tmp_buf[6],tmp_buf[6],tmp_buf[7],tmp_buf[7]);
+	}
+#endif
+    }
+    else
+    {
     switch(cmd & 0xf0) {
         case 0x80 :
             TRACE("MIDI keyup event: %d",buf[1]);
@@ -633,6 +650,7 @@ bool Dexed::ProcessMidiMessage(const uint8_t *buf, uint32_t buf_size) {
         default:
             TRACE("MIDI event unknown: cmd=%d, val1=%d, val2=%d",buf[0],buf[1],buf[2]);
             break;
+    }
     }
 
     TRACE("Bye");
