@@ -583,6 +583,11 @@ bool Dexed::ProcessMidiMessage(const uint8_t *buf, uint32_t buf_size) {
                     controllers.foot_cc = value;
                     controllers.refresh();
                     break;
+                case 7:
+                    TRACE("MIDI volume: %d %d",ctrl,value);
+                    fx.uiGain=float(value)/2.0/127.0;
+                    *p(p_output)=fx.uiGain;
+                    break;
                 case 64:
                     TRACE("MIDI sustain event: %d %d",ctrl,value);
                     sustain = value > 63;
