@@ -1844,3 +1844,4 @@
     lv2:appliesTo <https://github.com/dcoredump/dexed.lv2> ;
     rdfs:seeAlso <presets.ttl> .
 
+<https://github.com/dcoredump/dexed.lv2> rdfs:seeAlso <modgui.ttl> .
